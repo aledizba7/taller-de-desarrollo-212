@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla HTML</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        td{
+            border: 1px ridge black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        #titulo{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="3" class="titulo"><strong>Day</strong></td>
+            <td colspan="3" class="titulo"><strong>Seminar</strong></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="titulo"><strong>Schedule</strong></td>
+            <td rowspan="2" class="titulo"><strong>Topic</strong></td>
+        </tr>
+        <tr>
+            <td class="titulo"><strong>Begin</strong></td>
+            <td class="titulo"><strong>End</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 a.m.</td>
+            <td class="titulo">Introduction to XML</td>
+        </tr>
+        <tr>
+            <td class="titulo">Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td class="titulo">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+            <td rowspan="2" class="titulo">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 p.m.</td>
+            <td>12:00 p.m.</td>
+            <td class="titulo">XSL Formatting Objects</td>
+        </tr>
+    </table>
+</body>
+</html>

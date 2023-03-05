@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    
+    <style>
+        /*
+                < padding es como un margen o sangria en las tablas, es el espacio en blanco. (padding-top, padding-bottom,
+                  padding-left, padding-right, o simplemente padding)
+                < margin es el margen.margin: 50px;
+                < colspan es para unir columnas, el número entre comillas es el numero de columnas a unir, ej: "2"
+                < strong es para poner en negrita/ resaltar
+                < text-align: center para centrar el texto
+                < id con el estilo
+                < w3schools tables para etiquetas en html para tablas
+                < td para columna |
+                < tr para fila -
+                < ul= Lista desordenada, unorder? list.
+                < li = pone las viñetas. con ul se pone viñeta punto. con ol se pone viñeta número
+                < ol= lista ordenada con números
+                < hr hace lineas horizontales para separar horizontal rule. no se cierra
+            */
+        table{
+            width: 100%;
+        }
+        td{
+            border: 5px solid orange;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        #titulo{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2" id="titulo">
+                <strong>Nombre completo y Apellido</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Hugo</td>
+            <td>Sánchez</td>
+        </tr>
+        <tr>
+            <td>Paco</td>
+            <td>Sánchez</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>Sánchez</td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <td>Mes</td>
+            <td>Total</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>$150</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <tr>
+                    <td>Suma</td>
+                    <td>$250</td>
+                </tr>
+            </tr>
+        </tfoot>
+    </table>
+
+    <ul>
+        <li>Java</li>
+        <li>Html</li>
+        <li>CSS</li>
+    </ul>
+
+    <hr> 
+
+    <ol>
+        <li>Java</li>
+        <li>Html</li>
+        <li>CSS</li>
+    </ol> 
+
+    <ul>
+        <li>Café</li>
+        <li>Té</li>
+            <ol>
+                <li>Té negro</li>
+                <li>Té verde</li>
+            </ol>
+        <li>Leche</li>
+    </ul>
+
+    <p style="height: 300px;"></p>
+
+</body>
+</html>
